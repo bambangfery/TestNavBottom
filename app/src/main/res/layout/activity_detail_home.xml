@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.DetailHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/lyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="My App"
+            android:textSize="21sp"
+            android:gravity="center"
+            android:textColor="@color/basicColor"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lyHeader"/>
+
+    <com.test.alodoktertes.view.PriviewIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="21dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"/>
+
+
+</RelativeLayout>
